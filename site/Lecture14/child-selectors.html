@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Demonstration of Child-Selectors</title>
+    </head>
+    <style>
+        /*any article with section as direct parent */
+        section > article {
+            color: green;
+            font-size: 24px;
+        }
+        /*any h2 element with section element as direct parent*/
+        section > h2 {
+            color:green;
+        }
+    </style>
+    <body>
+        <h1>This is a demonstration of the Child-Selector Usage</h1>
+        <section>
+            <h2>Subheading 1</h2>
+            <div>
+                <article>Article inside div inside section</article>
+            </div>
+        </section>
+        <section>
+            <article>Here article is a direct child of the section element</article>
+        </section>
+        <h2>Subheading 2</h2>
+    </body>
+</html>
