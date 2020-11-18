@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>The Box Model</title>
+<style>
+    * {
+        box-sizing: border-box;
+    }
+    body {
+        background-color: gray;
+        margin: 0;
+        padding: 0;
+    }
+    #box{
+        background-color: blue;
+        /*Top Right Bottom Left*/
+        padding: 10px 10px 10px 10px;
+        /*short form*/
+        border: 5px solid black;
+        margin: 40px;
+        /*if only the width is adjusted, the heigth gets adjusted manually*/
+        width: 300px;
+        height: 50px;
+        /*to make the box width actually 300px use box-sizing: border-box; (default: content-box)*/
+        /*box-sizing is not inherited, so not usable in the body property*/
+        box-sizing: border-box;
+    }
+    #content{
+        background-color: #90EE90; /*green*/
+    }
+
+    h1{
+        margin-bottom: 30px;
+
+    }
+
+
+</style>
+</head>
+<body>
+
+<h1>Box Model</h1>
+
+<div id="box">
+  <div id="content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, expedita tempore, assumenda exercitationem voluptate laudantium provident ut recusandae quis, repellendus iusto ratione sit quos? Consectetur aliquid accusantium repellat consequatur enim!</div>
+</div>
+
+
+</body>
+</html>
