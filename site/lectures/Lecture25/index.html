@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width initial-scale=1">
+        <!-- Use latest version of your rendering engin -->
+        <meta http-eqiv="X-UA-Compatible" content="IE=chrome">
+
+        <!-- Css -->
+        <title>Bootstrap Starter Pack</title>
+        <!-- file with bootstrap styles -->
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <!-- Our custom styles, decclared after the bootstrap style 
+        to overwrite the default bootstrap-->
+        <link rel="stylesheet" href="css/styles.css">
+
+    </head>
+    <body>
+
+        
+        <h1>Hello Coursera!</h1>
+
+        <!--Required bootstrap html structure-->
+        <!-- Use container or container fluid class
+        Container-fluid: stretches grid to the full width of the browser and adds conststent padding
+        Container: Predetermined fixed with, responsive based on the wudth of the browser-->
+        <div class="container">
+            <!--Hoizontal class of columns, applies negative margin to the columns-->
+            <div class="row">
+                <div class="col-md-4">Col 1</div>
+            </div>
+        </div>
+
+        <!-- JS -->
+        <!--Bootstrap needs j-query, our file probably depends on them so its last (HTMl = sequentially rendered) -->
+        <script src="js/jquery-3.5.1.min.js"></script>
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="js/script.js"></script>
+
+
+    </body>
+</html>

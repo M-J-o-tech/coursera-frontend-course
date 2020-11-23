@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Responsive Framework</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <style>
+        /*BASE STYLE*/
+
+        /*set box-sizing*/
+
+        * {
+            box-sizing: border-box;
+        }
+
+        /*1. style the div container*/
+        .row {
+            width: 100%;
+            background-color: grey;
+        }
+
+        
+        /*2. Style the div-elements*/
+        p{
+            color: black;
+            background-color: green;
+            padding: 5px;
+            border: 1px solid black;
+            width: 90%;
+            height: 150px;
+            margin-right: auto;
+            margin-left: auto;
+        }
+
+        @media (min-width: 1200px){
+            .large-screen-4-columns {
+                border: 1px solid black;
+                width: 25%;
+                float: left;
+            }
+        }
+
+        @media (min-width: 950px) and (max-width: 1199px){
+            .small-screen-2-column {
+                border: 1px solid black;
+                width: 50%;
+                float: left;
+            }
+        }
+
+        @media (max-width: 949px){
+            .very-small-screen-1-column {
+                border: 1px solid black;
+                width: 100%;
+                float: left;
+            }
+        }
+
+    </style>
+    <body>
+        <h1>Responsive Framework Test</h1>
+        
+        <div class="row">
+            <div class="large-screen-4-columns small-screen-2-column very-small-screen-1-column"><p>P item 1</p></div>
+            <div class="large-screen-4-columns small-screen-2-column very-small-screen-1-column"><p>P item 2</p></div>
+            <div class="large-screen-4-columns small-screen-2-column very-small-screen-1-column"><p>P item 3</p></div>
+            <div class="large-screen-4-columns small-screen-2-column very-small-screen-1-column"><p>P item 4</p></div>
+            <div class="large-screen-4-columns small-screen-2-column very-small-screen-1-column"><p>P item 5</p></div>
+            <div class="large-screen-4-columns small-screen-2-column very-small-screen-1-column"><p>P item 6</p></div>
+            <div class="large-screen-4-columns small-screen-2-column very-small-screen-1-column"><p>P item 7</p></div>
+            <div class="large-screen-4-columns small-screen-2-column very-small-screen-1-column"><p>P item 8</p></div>
+            <section style="color: red;">Keep this box alive</section>
+        </div>
+    </body>
+</html>
